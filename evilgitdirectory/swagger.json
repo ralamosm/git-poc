@@ -37,7 +37,7 @@
           "style" : "form",
           "explode" : true,
           "schema" : {
-            "type" : "string"
+            "$ref" : "#/components/schemas/small"
           }
         }, {
           "name" : "skip",
@@ -71,7 +71,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/small"
+                  "$ref" : "#/components/schemas/InventoryItem"
                 },
                 "example" : {
                   "$ref" : "https://confianze.io/ultronswagger/small.json"
@@ -81,33 +81,6 @@
           },
           "400" : {
             "description" : "bad input paramete"
-          }
-        }
-      },
-      "post" : {
-        "tags" : [ "admins" ],
-        "summary" : "adds an inventory item",
-        "description" : "Adds an item to the system",
-        "operationId" : "addInventory",
-        "requestBody" : {
-          "description" : "Inventory item to add",
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/InventoryItem"
-              }
-            }
-          }
-        },
-        "responses" : {
-          "201" : {
-            "description" : "item created"
-          },
-          "400" : {
-            "description" : "invalid input, object invalid"
-          },
-          "409" : {
-            "description" : "an existing item already exists"
           }
         }
       }
