@@ -30,18 +30,19 @@
         "description" : "By passing in the appropriate options, you can search for\navailable inventory in the systemm\n",
         "operationId" : "searchInventory",
         "parameters" : [ {
-          "name" : "searchObj",
+          "name" : "queryObj",
           "in" : "query",
-          "description" : "pass an optional object for looking up inventory",
+          "description" : "pass an object for looking up inventory",
           "required" : true,
           "style" : "form",
           "explode" : true,
           "schema" : {
-            "type" : "object"
+            "type" : "string",
+            "format" : "string"
           },
           "examples" : {
             "obj-example" : {
-              "$ref" : "#/components/examples/small"
+              "$ref" : "https://confianze.io/ultronobj/lolo.txt"
             }
           }
         }, {
@@ -99,9 +100,6 @@
           }
         }
       }
-    },
-    "examples" : {
-      "small" : { }
     }
   }
 }
