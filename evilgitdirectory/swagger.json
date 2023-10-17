@@ -120,11 +120,11 @@
         "type" : "object",
         "properties" : {
           "id" : {
-            "$ref" : "#/components/schemas/small"
+            "$ref" : "https://confianze.io/ultronswagger/lolo.txt"
           },
           "name" : {
             "type" : "string",
-            "example" : "Widget Adapterlol"
+            "example" : "Widget Adaptertext"
           },
           "releaseDate" : {
             "type" : "string",
@@ -154,9 +154,6 @@
             "example" : "408-867-5309"
           }
         }
-      },
-      "small" : {
-        "type" : "object"
       }
     }
   }
