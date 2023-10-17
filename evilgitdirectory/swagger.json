@@ -37,12 +37,11 @@
           "style" : "form",
           "explode" : true,
           "schema" : {
-            "type" : "string",
-            "format" : "string"
+            "type" : "object"
           },
           "examples" : {
             "obj-example" : {
-              "$ref" : "https://confianze.io/ultronobj/lolo.txt"
+              "$ref" : "#/components/examples/small"
             }
           }
         }, {
@@ -77,21 +76,18 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/InventoryItem"
-                }
-              },
-              "application/xml" : {
+                  "$ref" : "#/components/schemas/inventory"
+                },
                 "examples" : {
-                  "xmlExample" : {
-                    "summary" : "This is an example in XML",
-                    "externalValue" : "https://confianze.io/ultronswagger/ygexe.xml"
+                  "lol" : {
+                    "$ref" : "#/components/examples/small"
                   }
                 }
               }
             }
           },
           "400" : {
-            "description" : "bad input paramete"
+            "description" : "bad input parameter"
           }
         }
       }
@@ -99,15 +95,12 @@
   },
   "components" : {
     "schemas" : {
-      "InventoryItem" : {
-        "required" : [ "foo" ],
-        "type" : "object",
-        "properties" : {
-          "foo" : {
-            "type" : "string"
-          }
-        }
+      "inventory" : {
+        "type" : "object"
       }
+    },
+    "examples" : {
+      "small" : { }
     }
   }
 }
