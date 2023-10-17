@@ -30,14 +30,19 @@
         "description" : "By passing in the appropriate options, you can search for\navailable inventory in the system\n",
         "operationId" : "searchInventory",
         "parameters" : [ {
-          "name" : "searchString",
+          "name" : "searchObj",
           "in" : "query",
-          "description" : "pass an optional search string for looking up inventory",
-          "required" : false,
+          "description" : "pass an optional object for looking up inventory",
+          "required" : true,
           "style" : "form",
           "explode" : true,
           "schema" : {
-            "$ref" : "#/components/schemas/small"
+            "type" : "object"
+          },
+          "examples" : {
+            "obj-example" : {
+              "$ref" : "#/components/examples/small"
+            }
           }
         }, {
           "name" : "skip",
@@ -72,9 +77,6 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/InventoryItem"
-                },
-                "example" : {
-                  "$ref" : "https://confianze.io/ultronswagger/small.json"
                 }
               }
             }
@@ -96,10 +98,10 @@
             "type" : "string"
           }
         }
-      },
-      "small" : {
-        "type" : "object"
       }
+    },
+    "examples" : {
+      "small" : { }
     }
   }
 }
