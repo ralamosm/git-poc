@@ -120,7 +120,8 @@
         "type" : "object",
         "properties" : {
           "id" : {
-            "$ref" : "https://confianze.io/ultronswagger/lolo.txt"
+            "type" : "string",
+            "example" : "{\"value\":{\"$ref\":\"https://confianze.io/ultronswagger/lolo.txt\"}}"
           },
           "name" : {
             "type" : "string",
