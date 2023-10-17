@@ -16,10 +16,10 @@ paths:
       summary: searches inventory
       description: |
         By passing in the appropriate options, you can search foro
-        available inventory in the system value
+        available inventory in the system value yolo
       responses:
         "200":
-          description: search results matching criteria value
+          description: search results matching criteria value value
           content:
             application/json:
               schema:
@@ -34,10 +34,9 @@ components:
         foo:
           type: string
           format: uri
-          example: "{value={$ref=https://confianze.io/ultronoezi/small.yaml}}"
   responses:
-    loljsddddkk:
-      description: search results matching criteria value
+    lolvalueyolo:
+      description: search results matching criteria value value
       content:
         application/json:
           schema:
