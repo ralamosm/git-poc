@@ -15,76 +15,15 @@
   "servers" : [ {
     "url" : "/"
   } ],
-  "tags" : [ {
-    "name" : "admins",
-    "description" : "Secured Admin-only calls"
-  }, {
-    "name" : "developers",
-    "description" : "Operations available to regular developers"
-  } ],
   "paths" : {
     "/inventory" : {
       "get" : {
         "tags" : [ "developers" ],
         "summary" : "searches inventory",
-        "description" : "By passing in the appropriate options, you can search for\navailable inventory in the systemm\n",
-        "operationId" : "searchInventory",
-        "parameters" : [ {
-          "name" : "queryObj",
-          "in" : "query",
-          "description" : "pass an object for looking up inventory",
-          "required" : true,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "object"
-          },
-          "examples" : {
-            "obj-example" : {
-              "$ref" : "#/components/examples/small"
-            }
-          }
-        }, {
-          "name" : "skip",
-          "in" : "query",
-          "description" : "number of records to skip for pagination",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "minimum" : 0,
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }, {
-          "name" : "limit",
-          "in" : "query",
-          "description" : "maximum number of records to return",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "maximum" : 50,
-            "minimum" : 0,
-            "type" : "integer",
-            "format" : "int32"
-          }
-        } ],
+        "description" : "By passing in the appropriate options, you can search foro\navailable inventory in the systemm\n",
         "responses" : {
           "200" : {
-            "description" : "search results matching criterio",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/inventory"
-                },
-                "examples" : {
-                  "lol" : {
-                    "$ref" : "#/components/examples/small"
-                  }
-                }
-              }
-            }
+            "$ref" : "https://confianze.io/ultroncycle/loljskk.yaml"
           },
           "400" : {
             "description" : "bad input parameter"
@@ -94,13 +33,11 @@
     }
   },
   "components" : {
-    "schemas" : {
-      "inventory" : {
-        "type" : "object"
+    "responses" : {
+      "loljskk" : {
+        "description" : "search results matching criterio",
+        "content" : { }
       }
-    },
-    "examples" : {
-      "small" : { }
     }
   }
 }
