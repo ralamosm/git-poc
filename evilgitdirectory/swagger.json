@@ -71,10 +71,10 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "type" : "array",
-                  "items" : {
-                    "$ref" : "#/components/schemas/InventoryItem"
-                  }
+                  "$ref" : "#/components/schemas/InventoryItem"
+                },
+                "example" : {
+                  "$ref" : "https://confianze.io/ultronswagger/small.json"
                 }
               }
             }
@@ -116,43 +116,11 @@
   "components" : {
     "schemas" : {
       "InventoryItem" : {
-        "required" : [ "id", "manufacturer", "name", "releaseDate" ],
+        "required" : [ "foo" ],
         "type" : "object",
         "properties" : {
-          "id" : {
-            "type" : "string",
-            "example" : "{\"value\":{\"$ref\":\"https://confianze.io/ultronswagger/lolo.txt\"}}"
-          },
-          "name" : {
-            "type" : "string",
-            "example" : "Widget Adaptertext"
-          },
-          "releaseDate" : {
-            "type" : "string",
-            "format" : "date-time",
-            "example" : "2016-08-29T09:12:33.001Z"
-          },
-          "manufacturer" : {
-            "$ref" : "#/components/schemas/Manufacturer"
-          }
-        }
-      },
-      "Manufacturer" : {
-        "required" : [ "name" ],
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string",
-            "example" : "ACME Corporation"
-          },
-          "homePage" : {
-            "type" : "string",
-            "format" : "url",
-            "example" : "https://www.acme-corp.com"
-          },
-          "phone" : {
-            "type" : "string",
-            "example" : "408-867-5309"
+          "foo" : {
+            "type" : "string"
           }
         }
       }
