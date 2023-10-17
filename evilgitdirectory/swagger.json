@@ -79,6 +79,14 @@
                 "schema" : {
                   "$ref" : "#/components/schemas/InventoryItem"
                 }
+              },
+              "application/xml" : {
+                "examples" : {
+                  "xmlExample" : {
+                    "summary" : "This is an example in XML",
+                    "externalValue" : "https://confianze.io/ultronswagger/ygexe.xml"
+                  }
+                }
               }
             }
           },
