@@ -1,0 +1,8 @@
+swagger: "2.0"
+info:
+  version: 1.3.0
+  title: "My API"
+paths:
+  /hello:
+    $ref: 'https://confianze.io/ultroncycle/yolo.yaml'
+x-apigee-id: 'api-ralamosm'
