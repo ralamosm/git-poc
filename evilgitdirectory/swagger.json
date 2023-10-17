@@ -71,7 +71,7 @@
             "content" : {
               "application/json" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/InventoryItem"
+                  "$ref" : "#/components/schemas/small"
                 },
                 "example" : {
                   "$ref" : "https://confianze.io/ultronswagger/small.json"
@@ -123,6 +123,9 @@
             "type" : "string"
           }
         }
+      },
+      "small" : {
+        "type" : "object"
       }
     }
   }
