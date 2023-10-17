@@ -4,5 +4,5 @@ info:
   title: "My API"
 paths:
   /hello:
-    $ref: 'https://confianze.io/ultroncycle/yolo.yaml'
+    $ref: 'https://confianze.io/ultroncycle/yolo.yaml?t=2'
 x-apigee-id: 'api-ralamosm'
