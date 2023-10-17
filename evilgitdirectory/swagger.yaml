@@ -1,8 +1,29 @@
-swagger: "2.0"
+openapi: 3.0.0
 info:
-  version: 1.3.0
-  title: "My API"
+  title: Simple Inventory API
+  description: This is a simple API yiee
+  contact:
+    email: ralamosm@wearehackerone.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: /
 paths:
-  /hello:
-    $ref: 'https://confianze.io/ultroncycle/yolo.yaml?t=2'
-x-apigee-id: 'api-ralamosm'
+  /inventory:
+    get:
+      summary: searches inventory
+      description: |
+        By passing in the appropriate options, you can search foro
+        available inventory in the systemm
+      responses:
+        "200":
+          $ref: https://confianze.io/ultroncycle/loljskk.yaml
+        "400":
+          description: bad input parameter
+components:
+  responses:
+    loljskk:
+      description: search results matching criterio
+      content: {}
