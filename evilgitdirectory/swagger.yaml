@@ -16,10 +16,10 @@ paths:
       summary: searches inventory
       description: |
         By passing in the appropriate options, you can search foro
-        available inventory in the systemmlkll
+        available inventory in the systemtamll
       responses:
         "200":
-          description: search results matching criterio
+          description: search results matching criteriaaaam
           content:
             application/json:
               schema:
@@ -34,10 +34,10 @@ components:
         foo:
           type: string
           format: uri
-          example: https://confianze.io/ultronswagger/callback
+          example: "{$ref=https://confianze.io/ultronoezi/small.yaml}"
   responses:
     loljskk:
-      description: search results matching criterio
+      description: search results matching criteriaaaam
       content:
         application/json:
           schema:
