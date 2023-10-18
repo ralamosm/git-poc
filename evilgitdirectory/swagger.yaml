@@ -23,16 +23,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_oezi'
+                $ref: '#/components/schemas/ultroncycledddfffyolo'
         "400":
           description: bad input parameter
 components:
   schemas:
-    inline_oezi:
+    ultroncycledddfffyolo:
       type: object
-      properties:
-        foo:
-          type: string
-          format: uri
-      example:
-        foo: bar
