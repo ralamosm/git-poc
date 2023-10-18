@@ -16,7 +16,7 @@ paths:
       summary: searches inventory
       description: |
         By passing in the appropriate options, you can search foro
-        available inventory in the system
+        available inventory in the systemo
       responses:
         "200":
           description: taken from a url
