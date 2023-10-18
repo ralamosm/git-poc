@@ -16,28 +16,23 @@ paths:
       summary: searches inventory
       description: |
         By passing in the appropriate options, you can search foro
-        available inventory in the system value yolo
+        available inventory in the system
       responses:
         "200":
-          description: search results matching criteria value value
+          description: taken from a url
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/inline_response_200'
+                $ref: '#/components/schemas/inline_oezi'
         "400":
           description: bad input parameter
 components:
   schemas:
-    inline_response_200:
+    inline_oezi:
       type: object
       properties:
         foo:
           type: string
           format: uri
-  responses:
-    Yup:
-      description: search results matching criteria value value
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/inline_response_200'
+      example:
+        foo: bar
